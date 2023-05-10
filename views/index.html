@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>html</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    :root {
+      font-size: 10px;
+      --LIGHT-PRIMARY-COLOR: #D1C4E9;
+      --PRIMARY-COLOR: #673AB7;
+      --TEXT-COLOR: #FFFFFF;
+      --ACCENT-COLOR: #FF5252;
+      --PRIMARY-TEXT-COLOR: #212121;
+      --SECONDARY-TEXT-COLOR: #757575;
+      --SECONDARY-TEXT-COLOR: #757575;
+      --DIVIDER-COLOR: #BDBDBD;
+    }
+
+    body {
+      height: 100vh;
+      background-color: var(--PRIMARY-COLOR);
+    }
+
+    #app {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: var(--TEXT-COLOR);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .you-should-know-me {
+      font-size: 3rem;
+      margin: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .content {
+      text-align: center;
+      font-size: 2rem;
+      width: 100%;
+      margin: 3rem;
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div id="app">
+    <div class="you-should-know-me">
+      You Should Know Me
+    </div>
+    <div class="content">
+      <section style="flex-basis: 100%;">
+        <p>你好! 我是赵火龙</p>
+        <p>目前我生活 & 工作在成都，职业是前端研发工程师</p>
+        <p>欢迎访问我的个人网站, 在这里你能查看我的个人作品列表并体验它们</p>
+      </section>
+    </div>
+  </div>
 </body>
+
 </html>
